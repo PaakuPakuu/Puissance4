@@ -23,7 +23,7 @@
 
         public bool InsertToken(Token token, int columnIndex)
         {
-            if (columnIndex < 0 || columnIndex >= Columns || _tokensInColumn[columnIndex] >= Columns - 2)
+            if (columnIndex < 0 || columnIndex >= Columns || _tokensInColumn[columnIndex] >= Lines)
             {
                 return false;
             }
